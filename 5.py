@@ -1,0 +1,1 @@
+input.on_button_pressed(Button.A, solve=lambda:serial.write_line(str((input.running_time())//60000) if (input.running_time())//60000>=10 else "0"+str((input.running_time())//60000)+":"+str((input.running_time())//60000) if (input.running_time())//60000>=10 else "0"+str((input.running_time())//%60000)))
